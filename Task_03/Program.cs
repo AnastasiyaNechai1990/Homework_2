@@ -6,24 +6,21 @@
 Console.Clear();
 
 Console.WriteLine("Введите порядковый номер дня недели: ");
-int num = int.Parse(Console.ReadLine()!);
-int numbers = [1, 2, 3, 4, 5];
-int count = 7;
+int x = int.Parse(Console.ReadLine()!);
+int numA = 6;
+int numB = 7;
 
-while (num <= count)
+if (x == numA || x == numB)
 {
-  if (num == numbers)
-  {
-    Console.WriteLine($"{num} -> нет");
-  }
-
-  else
-  {
-    Console.WriteLine($"{num} -> да");
-  }   
+  Console.WriteLine($"{x} -> да, это выходной день");  
 }
-Console.WriteLine("Дня недели с данным порядковым номером не существует!!!");
-
- 
+else if (x < numB || x < numB)
+{
+ Console.WriteLine($"{x} -> нет, это не выходной день"); 
+} 
+else
+{
+  Console.WriteLine("Дня недели с данным порядковым номером не существует");
+}
 
 
